@@ -9,7 +9,7 @@ $(function(){
  	//Gera Botao O
  	btnO = "<div class='circle'></div>"; 	
  	vet = [];
- 	//Possiveis posições de ganhar
+ 	//Possíveis posições de ganho
  	posWin = [ 	
  				[0,1,2],[3,4,5],[6,7,8],
  				[0,3,6],[1,4,7],[2,5,8],
@@ -24,7 +24,7 @@ $(function(){
 	  		table.append("<br style='clear:both'/>");
 	  		j+=3;
 	  	}	  	
-	  	table.append("<div class='pos "+vet[i]+"'>"+vet[i]+"</div>");		  	 	
+	  	table.append("<div class='pos "+vet[i]+"'></div>");		  	 	
 	}
 	//Função Checa Jogador//
 	function CheckPlayer(){		
@@ -40,9 +40,9 @@ $(function(){
 				}
 				else{
 					if($(this).hasClass('x')||$(this).hasClass('o')){				
-						
+					
 					}
-					else{$(this).addClass('x').append(btnO);
+					else{$(this).addClass('o').append(btnO);
 						$('.p2').removeClass('active');
 						$('.p1').addClass('active');
 					}
@@ -54,7 +54,8 @@ $(function(){
 	//Reinicia o jogo
 	function RestartGame(){
 		$('.restart').click(function(){
-			$('.pos').removeClass('x');
+			$('.table .pos').removeClass('x o').html("");
+
 		});
 	}
 	//////////////////////////////////////////////////////////////////////////////

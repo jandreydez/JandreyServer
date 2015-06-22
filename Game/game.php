@@ -28,7 +28,17 @@
       </h2>
     <div class="container">
       <div class="row">
+      <?php
 
+        $salad = array(
+                        'a' => array('b'=>'c', 'd'=>'3')
+
+                );
+        $len = count($salad['a']);
+        foreach($salad['a'] as &$show);
+        
+        echo $len.' '.$show." ";
+        ?>
         <!--<div class="pos">
           <div class="btn-x">
             <div class="first"></div>
