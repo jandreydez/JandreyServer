@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Jandrey Developer</title>
+        <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="owl-carousel/owl.transitions.css">    
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">   
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">   
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="owl-carousel/owl.transitions.css">    
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">   
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css"> 
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="owl-carousel/owl.carousel.js"></script>
+
+    
+  </head>
+  <body>
+
+    <!--Menu-->
+  <div class="wrap">
+    <header>
+      <nav class='menu'>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12"></div>
+              <ul>
+              <a class="name link link--yaku" href="#">
+              <span>J</span>
+              <span>a</span>
+              <span>n</span>
+              <span>d</span>
+              <span>r</span>
+              <span>e</span>
+              <span>y</span></a>
+                <li><a href="#">perfil</a></li>
+                <li><a href="#">projetos</a></li>
+                <li><a href="#">currículo</a></li>
+                <li><a href="#">contato</a></li>              
+              </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Banner Principal-->
+  <div class="banner">    
+      <div id="owl-demo" class="owl-carousel owl-theme" style="position:fixed"> 
+        <div class="item"><img src="img/minimal.png" alt="The Last of us"></div>
+        <div class="item"><img src="img/html.jpg" alt="GTA V"></div>
+        <div class="item"><img src="img/home-office-336378_1280.jpg" alt="Mirror Edge"></div>        
+      </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 textbanner">
+          <h2>Olá, eu sou Jandrey!</h2>
+          <p>Quer saber mais sobre mim?</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <a href="#perfil"><img src="img/setinhasbrancas.png" class="pointer animated infinite bounce" alt=""></a>
+
+      <!--Corpo1-->
+      <div id="perfil"class="corpo1">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12" >
+              <h2>Jandrey Oliveira</h2>
+              <p>Front-end Developer</p>
+            </div>
+            <section>
+              <div class="col-md-4">
+
+                   <div class="perfil">
+                     <span><h2 class="animated infinite rubberBand">ESTE SOU EU</h2></span>
+                  </div>
+              </div>
+            </section>
+            <section>
+                <div class="col-md-7 col-md-offset-1"> 
+                 <h2>Já pensou que bacana trabalhar com o que se gosta? então este sou eu.</h2>
+                 <p>Desde de pequeno ja gostando da área de tecnologia sempre fui fissurado por querer aprender coisas deste ramo e acho realmente que minha sorte foi descobrir o que gosto cedo.</p>
+                 <p>Sou realmente apaixonado pelo que estudo e faço, sempre querendo aprender mais, mergulhando em assuntos que muita das vezes nem sei, mas a paixão é tanta, que O não saber, não me intimida em nada. Atualmente cursando o <em>3° período</em> de <strong>Análise e Desenvolvimento de Sistemas</strong>, algo que aprendi até hoje é seja <strong><em>AUTODIDATA.</em></strong></p>
+                 <ul>
+                   <li class="sprite-html"></li>               
+                   <li class="sprite-css"></li>
+                   <li class="sprite-js"></li>
+                 </ul>
+                </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <!--Corpo2-->
+      <div class="corpo2">
+        <div class="container">          
+          <div class="row">
+              <div class="md-col-12"><h1>Em breve...</h1></div>
+            </div>
+        </div>
+      </div>
+  </div>
+
+  <script>
+    $(document).ready(function() { 
+  $("#owl-demo").owlCarousel({ 
+      navigation :false, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true,
+      autoPlay: 3000
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+  }); 
+});
+  </script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->    
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
