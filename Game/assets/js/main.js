@@ -4,7 +4,8 @@ $(function(){
 	btnX = "<div class='first'></div><div class='second'></div>";
  	btnO = "<div class='circle'></div>";
  	//contadores
- 	countX = 1;	
+ 	countX = 1;
+ 	countO = 1;	
  	//Vetor tabuleiro
  	vet = [];
  	//Possíveis posições de ganho
@@ -32,8 +33,10 @@ $(function(){
 						$('.countX').html("").append(countX++);
 					}
 				else if($('.pos').eq(posWin[i][j]).hasClass('o'))o+=1;
-				 		if(o==posWin[i].length)$('.result').show().html('<h2>O GANHOU</h2>');
-				
+				 	if(o==posWin[i].length){
+				 		$('.result').show().html('<h2>O GANHOU</h2>');
+						$('.countO').html("").append(countO++);
+				}	
 			}	
 		}
 	}	
@@ -63,18 +66,17 @@ $(function(){
 	function RestartGame(){
 		$('.restart').click(function(){
 			$('.pos').removeClass('x o').html("");
-			$('.result').hide("fade");
+			$('.result').hide("blind");
 		});
 	}	
 	RestartGame();
 	CheckPlayer();
 	//*Painel*//
 	//Desktop
-	{$(".opcoes").click(function(){
+	$(".opcoes").click(function(){
 		$('.painelop').slideToggle();
-		$('.opcoes').html("Ok");
 		changecolor();
-	});}
+	});
 	//Troca cor do Tabuleiro
 	function changecolor(){
 	MyColor = $('#color').val();
