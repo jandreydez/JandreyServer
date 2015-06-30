@@ -38,11 +38,12 @@
 	<?php 
 	if(isset($_GET['verifica'])):
 			if($_SESSION['key']==true):
-			echo "Olá ".$_SESSION['email'];
-			else:
-			echo"Nao logado";
+			echo "Olá ".$_SESSION['email'];			
 			endif;
-	endif;		
+	endif;
+	if(isset($_GET['falha'])):
+			echo "ERROR";		
+	endif;	
 	?>
 </body>
 </html>

@@ -16,6 +16,6 @@ if($row){
 	header("location: ./fomulario.php?verifica=sessao");
 }
 else{
-	header("location: ./fomulario.php");
+	header("location: ./fomulario.php?falha=erro");
 
 }
