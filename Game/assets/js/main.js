@@ -1,4 +1,3 @@
-
 $(function(){
 	//Gera Botões X e O
 	btnX = "<div class='first'></div><div class='second'></div>";
@@ -6,10 +5,7 @@ $(function(){
  	//contadores
  	countX = 1;
  	countO = 1;
- 	
- 	//Bool check win X or O
- 	winO=0;
- 	winX=0;
+ 	velha=true;
  	//Vetor tabuleiro
  	vet = [];
  	//Possíveis posições de ganho
@@ -25,6 +21,20 @@ $(function(){
 	  	}
 	  	table.append("<div class='pos'></div>");		  	 	
 	}
+
+	$('.pos').click(function(event) {
+		$(this).removeClass('marcado');
+		$(this).addClass('marcado');
+		var check=0;
+		$('.pos').each(function() {
+			if($(this).hasClass('marcado')){
+				check++;
+				if(check==9&&velha==true){
+					$('.result').show().html('<h2>VELHA</h2>');
+				}
+			}
+		});
+	});
 	//Checa vencedor
 	function CheckWin(){
 		for(i=0;i<posWin.length;i++){
@@ -35,22 +45,15 @@ $(function(){
 					if(x==posWin[i].length){
 						$('.result').show().html('<h2>X GANHOU</h2>');
 						$('.countX').html("").append(countX++);
-						x=3;
-						winX=1;
-						$('#x').removeClass('null');
-						$('#x').addClass('x');
+						velha=false;
 					}
 				}
 				else if($('.pos').eq(posWin[i][j]).hasClass('o')){
 					o+=1;
 				 	if(o==posWin[i].length){
-				 		o=3;
-				 		$('.mostra').append(''+x+'  '+o+'<br/>');	
-				 		winO=1;
 				 		$('.result').show().html('<h2>O GANHOU</h2>');
 						$('.countO').html("").append(countO++);
-						$('#x').removeClass('null');
-						$('#x').addClass('o');
+				 		velha=false;
 					}				
 				}					
 			}
@@ -84,11 +87,9 @@ $(function(){
 	//Reinicia o jogo
 	function RestartGame(){
 		$('.restart').click(function(){
-			$('.pos').removeClass('x o').html("");
+			$('.pos').removeClass('x o marcado').html("");
 			$('.result').hide("blind");
-		
-			winX=0;
-			winO=0;
+			velha=true;
 		});
 	}	
 	CheckPlayer();
