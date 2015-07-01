@@ -52,10 +52,12 @@
                   <li>DRAW<br/><span class="draw ">0</span></li>
                   <li>O WIN<br/><span class="countO">0</span></li>
                 </ul>
-
+            
                 
             </div>        
+            <div id="x" class="null">
               
+            </div>
         
   
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

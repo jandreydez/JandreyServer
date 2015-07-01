@@ -5,7 +5,11 @@ $(function(){
  	btnO = "<div class='circle'></div>";
  	//contadores
  	countX = 1;
- 	countO = 1;	
+ 	countO = 1;
+ 	
+ 	//Bool check win X or O
+ 	winO=0;
+ 	winX=0;
  	//Vetor tabuleiro
  	vet = [];
  	//Possíveis posições de ganho
@@ -24,22 +28,37 @@ $(function(){
 	//Checa vencedor
 	function CheckWin(){
 		for(i=0;i<posWin.length;i++){
-			x = 0; o = 0
-			
+			x = 0; o = 0			
 			for(j=0;j<posWin[i].length;j++){
-				if($('.pos').eq(posWin[i][j]).hasClass('x'))x+=1;
+				if($('.pos').eq(posWin[i][j]).hasClass('x')){
+					x+=1;
 					if(x==posWin[i].length){
 						$('.result').show().html('<h2>X GANHOU</h2>');
 						$('.countX').html("").append(countX++);
+						x=3;
+						winX=1;
+						$('#x').removeClass('null');
+						$('#x').addClass('x');
 					}
-				else if($('.pos').eq(posWin[i][j]).hasClass('o'))o+=1;
+				}
+				else if($('.pos').eq(posWin[i][j]).hasClass('o')){
+					o+=1;
 				 	if(o==posWin[i].length){
+				 		o=3;
+				 		$('.mostra').append(''+x+'  '+o+'<br/>');	
+				 		winO=1;
 				 		$('.result').show().html('<h2>O GANHOU</h2>');
 						$('.countO').html("").append(countO++);
-				}	
-			}	
+						$('#x').removeClass('null');
+						$('#x').addClass('o');
+					}				
+				}					
+			}
 		}
-	}	
+	}
+
+
+		
 	//Função Checa Jogador//
 	function CheckPlayer(){	
 			$('.pos').click(function(){
@@ -67,10 +86,13 @@ $(function(){
 		$('.restart').click(function(){
 			$('.pos').removeClass('x o').html("");
 			$('.result').hide("blind");
+		
+			winX=0;
+			winO=0;
 		});
 	}	
-	RestartGame();
 	CheckPlayer();
+	RestartGame();
 	//*Painel*//
 	//Desktop
 	$(".opcoes").click(function(){
