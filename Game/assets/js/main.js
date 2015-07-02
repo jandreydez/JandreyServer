@@ -5,6 +5,7 @@ $(function(){
  	//contadores
  	countX = 1;
  	countO = 1;
+ 	countV = 1;
  	velha=true;
  	//Vetor tabuleiro
  	vet = [];
@@ -21,7 +22,7 @@ $(function(){
 	  	}
 	  	table.append("<div class='pos'></div>");		  	 	
 	}
-
+	//check Velha//
 	$('.pos').click(function(event) {
 		$(this).removeClass('marcado');
 		$(this).addClass('marcado');
@@ -31,6 +32,7 @@ $(function(){
 				check++;
 				if(check==9&&velha==true){
 					$('.result').show().html('<h2>VELHA</h2>');
+					$('.draw').html("").append(countV++);
 				}
 			}
 		});
@@ -58,10 +60,7 @@ $(function(){
 				}					
 			}
 		}
-	}
-
-
-		
+	}	
 	//Função Checa Jogador//
 	function CheckPlayer(){	
 			$('.pos').click(function(){
@@ -103,7 +102,6 @@ $(function(){
 	//Troca cor do Tabuleiro
 	function changecolor(){
 	MyColor = $('#color').val();
-	$('.pos').css("background-color",MyColor);
-	}
+	$('.pos').css("background-color",MyColor);	}
 
 });

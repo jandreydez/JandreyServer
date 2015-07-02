@@ -34,14 +34,14 @@
           </div>
         </div>-->
         
-            <div class="col-md-3 col-md-offset-3 col-sm-4">
+            <div class="col-md-3 col-md-offset-2 col-sm-4 col-sm-offset-1 col-xs-12">
                 <h2 class="p1 active">Player1 X</h2>
                 <h2 class="p2">Player2 O</h2>    
                 <div class="table">
                   <div class="result"></div></div>
                 <div></div>          
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="button restart">Restart Game</div>
                 <ul class="painelop">
                   <li>
