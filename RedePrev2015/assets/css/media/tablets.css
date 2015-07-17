@@ -1,0 +1,68 @@
+@media (min-width: 768px) {
+	.prev-post-2 .trianguloprev:last-child{
+	    display: none !important;
+	}
+	.next-post-2 .triangulonext:last-child{
+	    display: none !important;
+	}
+}
+@media (min-width: 768px) and (max-width: 992px) {
+	#main-content .page-side{
+		width: 220px;
+		height: 100%;
+		position: fixed;
+		top: 0;
+	}
+	#main-content .page-side{
+		width: 285px;
+	}
+	.page-side, #main-content {
+		left: 0px !important;
+		padding-left: 60px;
+	}
+	.single .page-side{
+		display: none;
+	}
+	.single .page-main {
+		margin-left: 0px;
+	}
+	.info-content-side{
+		display: none;
+	}
+	.post.isotope-item {
+		left: 0px !important;
+		margin-left: 0 !important;
+		width: 100% !important;
+	}
+	.single .banner-top-content-in img{
+		width: 100% !important;
+		height: auto;
+		top: 0 !important;
+	}
+	.banner-top-content{height:200px !important}
+
+	/*
+	#main-content .page-side {
+		display: none;
+	}
+	#main-content .page-side.lugares{
+		display: block;
+	}
+	#main-content .page-side.lugares2{
+		display: none;
+	}
+	*/
+	.page-side{
+		display: none !important;
+	}
+	.banner-vector{
+		display: none !important;
+	}
+	.page-main.gallery{
+		margin-left: 0;
+	}
+	.content-more .post img {
+		width: 100%;
+		height: auto;
+	}
+}

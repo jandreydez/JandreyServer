@@ -1,0 +1,14 @@
+@import url(libs/bootstrap.css?v=1);
+@import url(libs/font-awesome.css); 
+@import url(libs/magnific-popup.css);
+@import url(libs/mediaelementplayer.css);
+
+@import url(libs/masterslider.css);
+@import url(libs/masterslider-skin.css);
+
+@import url(style.css);
+
+@import url(media/smartphones.css);
+@import url(media/tablets.css);
+@import url(media/desktops.css);
+@import url(media/large-desktops.css);
