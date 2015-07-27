@@ -1,5 +1,5 @@
 <?php include "header.php";?> 
-   <div class="bar-sobre ">
+   <div class="bar-sobre bar-first">
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-md-offset-1">
@@ -123,7 +123,7 @@
               <h1>Histórico</h1>
               <h3>Regras e princípios rígidos no dia a dia para garantir o seu futuro<h3>
               <p>Investimentos pessoais são decisões individuais. É a própria pessoa quem decide quanto quer investir, que risco aceita correr, que retorno gostaria de obter e em que prazo. Mas, como fazer quando o investimento é realizado com o dinheiro poupado por milhares de pessoas, com o objetivo específico de garantir as respectivas aposentadorias?</p>
-
+              
               <p>Este é o caso da RedePrev, que administra planos de benefícios e um patrimônio formado pelas contribuições mensais feitas pelos participantes e pelas Patrocinadoras. Este patrimônio deve ser administrado observando princípios de segurança, rentabilidade, solvência, liquidez e transparência. Estas regras e princípios compõem o que se convencionou chamar de Governança Corporativa, que toda administração deve seguir.</p>
 
               <p>A RedePrev segue estes princípios de Governança Corporativa, visando colaborar com o aumento da transparência no processo de análise, decisão e acompanhamento dos investimentos dos recursos dos participantes.

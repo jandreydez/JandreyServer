@@ -10,7 +10,7 @@
     <link href="assets/css/vendor/animate.css" rel="stylesheet"> 
     <link href="assets/css/vendor/owl.carousel.css" rel="stylesheet"> 
     <link href="assets/css/vendor/owl.transitions.css" rel="stylesheet"> 
-    <link href="assets/css/vendor/owl.theme.css" rel="stylesheet"> 
+    <link href="assets/css/vendor/owl.theme.css" rel="stylesheet">     
     <link href="assets/css/style.css" rel="stylesheet"> 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -19,23 +19,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/vendor/jquery.nicescroll.js"></script>
     <script src="assets/js/vendor/owl.carousel.js"></script>
     <script src="assets/js/vendor/countUp.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <ul class="menu">
-            <li><a href="#"><img src="assets/images/logo.png" alt=""></a></li>
-            <li><a href="#">SOBRE NÓS</a></li>
-            <li><a href="#">PLANOS</a></li>
-            <li><a href="#">RESULTADOS</a></li>
-            <li><a href="#">EDUCAPREV</a></li>
-            <li><a href="#">NOTÍCIAS</a></li>
-            <li><a href="#">CONTATO</a></li>
-            <li><a href="#"><span class="lock"></span><p>HomePrev</p></a></li>
-          </ul>
+        <div class="col-md-10 col-md-offset-1">          
+            <ul class="menu">
+              <li><a class="logo"href="#"><img src="assets/images/logo.png" alt=""></a></li>
+              <li><a href="#">SOBRE NÓS</a></li>
+              <li><a href="#">PLANOS</a></li>
+              <li><a href="#">RESULTADOS</a></li>
+              <li><a href="#">EDUCAPREV</a></li>
+              <li><a href="#">NOTÍCIAS</a></li>
+              <li><a href="#">CONTATO</a></li>
+              <li><a href="#"><span class="lock"></span><p>HomePrev</p></a></li>
+            </ul>          
         </div>
       </div>
     </div>
