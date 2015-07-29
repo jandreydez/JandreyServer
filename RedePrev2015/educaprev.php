@@ -16,51 +16,36 @@
 	<div class="line-time">
 		<div class="ballmini">
 			<ul class="age">
-				<li><div>1821</div></li>
-				<li><div>1889</div></li>
-				<li><div>1890</div></li>
-				<li><div>1891</div></li>
-				<li><div>1892</div></li>
-				<li><div>1896</div></li>
-				<li><div>2000</div></li>
-				<li><div>2015</div></li>
+				<li><div data="age" data-content-age="concedido, por Decreto da Corte Portuguesa, o direito à aposentadoria aos professores e mestres régios de primeiras letras, gramática latina.">1821</div></li>
+				<li><div data="age" data-content-age=" criado o Fundo Especial de Pensões do Pessoal das Oficinas da Imprensa Régia.">1889</div></li>
+				<li><div data="age" data-content-age="criado o Fundo de Aposentadoria dos Trabalhadores da Estrada de Ferro Central do Brasil.">1890</div></li>
+				<li><div data="age" data-content-age=" criada a Caixa de Montepio dos Funcionários do Banco da República do Brasil.">1904</div></li>
+				<li><div data="age" data-content-age="criada a Caixa para os trabalhadores dos serviços telegráficos e radiotelegráficos.">1931</div></li>
+				<li><div data="age" data-content-age="trabalhadores das empresas de mineração e das empresas de transporte aéreo passam a contar com o regime das Caixas de Aposentadorias e Pensões.">1934</div></li>
+				<li><div data="age" data-content-age="criados seis grandes Institutos:
+				IAPM – Instituto de Aposentadoria e Pensões dos Marítimos:
+				IAPC – Instituto de Aposentadoria e Pensões dos Comerciários;
+				IAPB – Instituto de Aposentadoria e Pensões dos Bancários;
+				IAPI – Instituto de Aposentadoria e Pensões dos Industriários;
+				IAPETEC – Instituto Aposentadoria e Pensões dos Empregados em Transporte e Cargas;
+				IAPE – Instituto de Aposentadoria e Pensão da Estiva.">1945</div></li>
+				<li><div data="age" data-content-age="trabalhadores das empresas de mineração e das empresas de transporte aéreo passam a contar com o regime das Caixas de Aposentadorias e Pensões.">1966</div></li>
+				<li><div data="age" data-content-age="COnteudo8">1977</div></li>
+				<li><div data="age" data-content-age="COnteudo8">1978</div></li>
+				<li><div data="age" data-content-age="COnteudo8">1978</div></li>
+				<li><div data="age" data-content-age="COnteudo8">1978</div></li>
+				<li><div data="age" data-content-age="COnteudo8">1978</div></li>
+				
+
+
 			</ul>
 		</div>		
 	</div>
 </div>
 <div class="agebox">
-	1Concedido, por Decreto da Corte Portuguesa, o direito à aposentadoria aos professores e mestres régios de primeiras letras, gramática latina.
 	<div></div>
+	<span></span>
 </div>
-<div class="agebox">
-	2Concedido, por Decreto da Corte Portuguesa, o direito à aposentadoria aos professores e mestres régios de primeiras letras, gramática latina.
-	<div></div>
-</div>
-<div class="agebox">
-	3Concedido, por Decreto da Corte Portuguesa, o direito à aposentadoria aos professores e mestres régios de primeiras letras, gramática latina.
-	<div></div>
-</div>
-<div class="agebox">
-	4Concedido, por Decreto da Corte Portuguesa, o direito à aposentadoria aos professores e mestres régios de primeiras letras, gramática latina.
-	<div></div>
-</div>
-<div class="agebox">
-	5Concedido, por Decreto da Corte Portuguesa, o direito à aposentadoria aos professores e mestres régios de primeiras letras, gramática latina.
-	<div></div>
-</div>
-<div class="agebox">
-	6Concedido, por Decreto da Corte Portuguesa, o direito à aposentadoria aos professores e mestres régios de primeiras letras, gramática latina.
-	<div></div>
-</div>
-<div class="agebox">
-	7Concedido, por Decreto da Corte Portuguesa, o direito à aposentadoria aos professores e mestres régios de primeiras letras, gramática latina.
-	<div></div>
-</div>
-<div class="agebox">
-	8Concedido, por Decreto da Corte Portuguesa, o direito à aposentadoria aos professores e mestres régios de primeiras letras, gramática latina.
-	<div></div>
-</div>
-
 <div class="bounceInUp animated">
 	<div class="bar3-educaprev">
 		<div class="container">
@@ -157,8 +142,5 @@
 			</div>
 		</div>		
 	</div>
-
 </div>
-
-
 <?php include "footer.php";?>

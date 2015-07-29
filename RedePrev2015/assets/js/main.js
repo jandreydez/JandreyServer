@@ -1,5 +1,6 @@
 $(function(){
-//Bar2-SobreNós// 
+//Page Sobre nós
+	//Bar2-SobreNós// 
 	//slider// 
 	$('.owl-carousel').owlCarousel({
 	    items:1,
@@ -49,6 +50,7 @@ $(function(){
 		$('.dates').stop().slideUp("swing");
 		$('.list-sobre').stop().slideDown("swing");
 	});
+//Page Planos//
 	//Planos Circles//
 		//Animated Circle//
 		cExit = 'bounceOut';
@@ -57,13 +59,13 @@ $(function(){
 		coExit = 'bounceOutDown';
 		coEnter = 'bounceInUp';		//
 
-	plano = $('.col-md-6.text-center');//Grids Circle//
-	op = $('.op');// Circle Planos OP
-	r = $('.r');//Circle Planos R
-	contentop = $('.contentop');//Conteudo Texto PLANOS OP
-	contentr = $('.contentr');//Conteudo Texto PLANOS R
+		plano = $('.col-md-6.text-center');//Grids Circle//
+		op = $('.op');// Circle Planos OP
+		r = $('.r');//Circle Planos R
+		contentop = $('.contentop');//Conteudo Texto PLANOS OP
+		contentr = $('.contentr');//Conteudo Texto PLANOS R
 	//Effect OP
-	op.click(function(){
+		op.click(function(){
 		if(plano.hasClass('checked')){
 			$('.rcircle').show();
 			plano.addClass(cExit);
@@ -93,7 +95,7 @@ $(function(){
 		}
 	});
 	//Effect R
-	r.click(function(){
+		r.click(function(){
 		if(plano.hasClass('checked')){
 			$('.opcircle').show();		
 			plano.addClass(cExit);
@@ -132,10 +134,9 @@ $(function(){
 			$(this).slideUp(200,function(){
 				$(this).insertBefore('.planos-list li:first-child');
 				$(this).find('span').css("display","block").addClass('animated bounceInRight').removeClass('fadeOutLeftBig');
-			}).slideDown(200);}		
-						
+			}).slideDown(200);}							
 	});
-	//Educaprev//
+	//Page Educaprev//
 		//Bar3-Educaprev PrevButtons//
 		$(".bar3-educaprev .prevbutton").each(function(index){		
 		$('.bar3-educaprev .prevbutton').eq(index).addClass('b'+index);		
@@ -155,6 +156,14 @@ $(function(){
 
 		////Bar2-Educaprev linha do tempo//
 		$(".bar2-educaprev").niceScroll();		
+		$("div[data='age']").hover(function() {
+			text = $(this).attr('data-content-age');
+			$('.agebox span').html("");			
+			$('.agebox span').append(text);
+		},function(){			
+		});
+
+		
 		$('.age li').hover(function() {
 			$(this).addClass('animated pulse infinite');
 			position = $(this).offset();
@@ -163,8 +172,9 @@ $(function(){
 		}, function() {
 			$('.agebox').hide();
 			$(this).removeClass('animated pulse infinite');
-		});
-		//Bar4-Educaprev
+		});	
+
+		//Bar4-Educaprev		
 		$(".bar4-educaprev ul li").each(function(index){		
 		$('.bar4-educaprev ul li').eq(index).addClass('x'+index);		
 		});
@@ -195,5 +205,8 @@ $(function(){
 					}).addClass('flipInX animated').show();}
 				//},1000);
 		});
+	//Page-Resultados/
+		//Bar2-Resultados//
+		$(".pol-inves div").niceScroll();	
 });
 	
