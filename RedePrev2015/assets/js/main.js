@@ -207,6 +207,20 @@ $(function(){
 		});
 	//Page-Resultados/
 		//Bar2-Resultados//
-		$(".pol-inves div").niceScroll();	
+		$(".pol-inves div").niceScroll();
+	//Page Todas Notícias//
+		//ImgHoverAnimation//
+		$('.imgnoticia').hover(function(){
+			$('.plus').addClass('animated slideInDown');
+		},function(){
+			$('.plus').removeClass('animated slideInDown');				
+		});
+		//ava-box//
+		$('.ava-rel ul li').click(function(){
+			$('.ava-rel ul li').parent().find('.ava-box').stop().slideUp();
+			$(this).parent().find('.ava-box').stop().slideDown();
+		});
+
+		
 });
 	
